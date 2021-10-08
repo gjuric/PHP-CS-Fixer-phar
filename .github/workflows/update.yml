@@ -2,7 +2,7 @@ name: Tag a release
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '13 7 * * *'
 
 jobs:
   build:
