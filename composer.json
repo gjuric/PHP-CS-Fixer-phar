@@ -1,0 +1,32 @@
+{
+    "name": "gjuric/php-cs-fixer-phar",
+    "type": "application",
+    "description": "Composer-based PHP-CS-Fixer phar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        },
+        {
+            "name": "Dariusz Rumiński",
+            "email": "dariusz.ruminski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3 || ^8.0",
+        "ext-json": "*",
+        "ext-tokenizer": "*"
+    },
+    "conflict": {
+        "friendsofphp/php-cs-fixer" : "*"
+    },
+    "suggest": {
+        "ext-dom": "For handling output formats in XML",
+        "ext-mbstring": "For handling non-UTF8 characters.",
+        "symfony/polyfill-mbstring": "When enabling `ext-mbstring` is not possible."
+    },
+    "bin": [
+        "php-cs-fixer.phar"
+    ]
+}
